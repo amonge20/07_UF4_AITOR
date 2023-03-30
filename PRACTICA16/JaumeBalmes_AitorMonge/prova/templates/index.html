@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scable=no init">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index template</title>
+</head>
+<body>
+    {% include "head/header.html" %}
+    <h1>PRIMER PROJECTE</h1>
+
+    <% block content %}
+
+    <% endblock %>
+    <p>benvinguts a la primera app Prova!</p>
+    <p>Dades professor</p>
+    <div>
+        <div>
+            <label>Nom: </label> {{ nombre }}
+        </div>
+        <div>
+            <label>Cognom: </label> {{ surname }}
+        </div>
+        <div>
+            <label>Edat: </label> {{ age }}
+        </div>
+    </div>
+</body>
+</html>
